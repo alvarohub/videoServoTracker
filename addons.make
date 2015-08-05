@@ -1,0 +1,7 @@
+ofxKinect
+ofxOpenCv
+ofxOsc
+ofxXmlSettings
+ofxCv
+ofxFaceTracker
+ofxPS3EyeGrabber
