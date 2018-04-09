@@ -6,9 +6,9 @@ void ofApp::setup(){
     ofBackground(0,0,0);
     ofSetFrameRate(30);
     
-    camWidth 		= 320;//640;	// try to grab at this size.
-    camHeight 		= 240;//480;
-    camFrameRate=30;
+    camWidth 		= 640;	// try to grab at this size.
+    camHeight 		= 480;
+    camFrameRate=40;
     cameraCenter.set(camWidth/2, camHeight/2);
     
     // auxiliary framebuffer to create rotations using graphic card:
@@ -45,7 +45,7 @@ void ofApp::setup(){
     vidGrabber.initGrabber(camWidth, camHeight);
     
 #ifdef USE_PS3_CAMERA
-    vidGrabber.setAutogain(false);
+    vidGrabber.setAutogain(true);
     vidGrabber.setAutoWhiteBalance(false);
 #endif
     
@@ -231,7 +231,7 @@ void ofApp::draw(){
     
     ofPushMatrix();
     
-    ofScale(2.0, 2.0);
+   // ofScale(2.0, 2.0);
     img.draw(0,0);//, 640, 480);
     
     if (detectedFaces.size()>0) {

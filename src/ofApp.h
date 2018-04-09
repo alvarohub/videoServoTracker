@@ -18,7 +18,7 @@
 #include "ofxPS3EyeGrabber.h"
 #include "ofxCv.h"
 
-//#define USE_PS3_CAMERA // comment this to use other camera (e.g., the laptop camera)
+#define USE_PS3_CAMERA // comment this to use other camera (e.g., the laptop camera)
 
 // COMMANDS for serial control of the Arduino:
 #define NUMBER_END '#'
